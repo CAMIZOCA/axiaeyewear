@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import { categories, categoryUrl } from '../data/catalog';
+import '../styles/responsive.css';
+import { categoryUrl } from '../data/catalog';
 
 interface Props {
   title: string;
@@ -8,14 +9,15 @@ interface Props {
   image?: string;
   schema?: Record<string, unknown>;
 }
-const { title, description, image = '/assets/hero-editorial.webp', schema } = Astro.props;
+const { title, description, image = '/assets/hero-campaign-desktop.webp', schema } = Astro.props;
 const canonical = new URL(Astro.url.pathname, 'https://axiaeyewear.com').toString();
 const socialImage = new URL(image, 'https://axiaeyewear.com').toString();
 const nav = [
-  { href: categoryUrl('gafas-de-sol'), label: categories['gafas-de-sol'].label },
-  { href: categoryUrl('screen-glasses'), label: categories['screen-glasses'].label },
-  { href: categoryUrl('clips'), label: categories.clips.label },
-  { href: '/axia/', label: 'La marca' },
+  { href: categoryUrl('gafas-de-sol'), label: 'Sunglasses' },
+  { href: categoryUrl('screen-glasses'), label: 'Screen Glasses' },
+  { href: categoryUrl('clips'), label: 'Clips' },
+  { href: '/axia/', label: 'Our Story' },
+  { href: '/contacto/', label: 'Contact' },
 ];
 const organization = {
   '@context': 'https://schema.org',
@@ -61,12 +63,12 @@ const organization = {
         <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
           {nav.map((item) => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
         </nav>
-        <a class="selection-link" href="/seleccion/" aria-label="Ver mi selección"><span class="selection-label">Mi selección</span><span class="selection-count" data-selection-count>0</span></a>
+        <a class="selection-link" href="/seleccion/" aria-label="Ver mi selección"><span class="selection-label">My Selection</span><span class="selection-count" data-selection-count>0</span></a>
       </div>
     </header>
     <main id="contenido"><slot /></main>
     <footer class="site-footer">
-      <div class="footer-top"><div><p class="eyebrow mint">AXIA / ἀξία</p><p class="footer-statement">Lo que tiene valor<br /><em>propio permanece.</em></p></div><div class="footer-links"><div><p>Explora</p><a href="/colecciones/gafas-de-sol/">Gafas de sol</a><a href="/colecciones/screen-glasses/">Screen Glasses</a><a href="/colecciones/clips/">Clips</a><a href="/axia/">Nuestra historia</a></div><div><p>Información</p><a href="/contacto/">Contacto</a><a href="/preguntas-frecuentes/">Preguntas frecuentes</a><a href="/privacidad/">Privacidad</a><a href="/terminos/">Términos y condiciones</a></div><div><p>Conecta</p><a href="https://www.instagram.com/axiaeyewear_ec/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:hello@axiaeyewear.com">hello@axiaeyewear.com</a><a href="https://wa.me/593999028654" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></div>
+      <div class="footer-top"><div><p class="eyebrow mint">AXIA / ἀξία</p><p class="footer-statement">Lo que tiene valor<br /><em>propio permanece.</em></p></div><div class="footer-links"><div><p>Explore</p><a href="/colecciones/gafas-de-sol/">Sunglasses</a><a href="/colecciones/screen-glasses/">Screen Glasses</a><a href="/colecciones/clips/">Clips</a><a href="/axia/">Our Story</a></div><div><p>Information</p><a href="/contacto/">Contact</a><a href="/preguntas-frecuentes/">FAQ</a><a href="/privacidad/">Privacy</a><a href="/terminos/">Terms & Conditions</a></div><div><p>Connect</p><a href="https://www.instagram.com/axiaeyewear_ec/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:hello@axiaeyewear.com">hello@axiaeyewear.com</a><a href="https://wa.me/593999028654" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></div>
       <div class="footer-bottom"><span>© {new Date().getFullYear()} AXIA Eyewear. Una marca vinculada a Óptica Andina.</span><span>Quito, Ecuador · Mirar con intención</span></div>
     </footer>
     <script src="../scripts/site.ts"></script>

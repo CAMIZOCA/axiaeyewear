@@ -4,6 +4,8 @@ dist/
 public/assets/catalog/
 public/assets/logo-axia.png
 public/assets/hero-editorial.webp
+public/assets/hero-campaign-desktop.webp
+public/assets/hero-campaign-mobile.webp
 .env
 .env.*
 !.env.example

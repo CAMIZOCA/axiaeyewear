@@ -37,7 +37,7 @@ La selección se guarda en `localStorage` y crea una consulta por WhatsApp. Esta
 ## Imágenes y fuentes
 
 - Logo oficial: [Óptica Andina](https://www.opticaandina.com.ec/storage/brands/01KNK5321FVG4EAYBPNZAJFRA3.png), conservado en `brand/logo-axia-original.png`.
-- Imagen editorial de portada: generada para este proyecto con la indicación «escena editorial de lujo para fondo de hero web, piedra escultórica carbón, acento tenue de vidrio menta, luz lateral cálida y espacio negativo; sin gafas, personas, texto ni logotipo». Original en `brand/hero-editorial-original.png`.
+- Imágenes de campaña para escritorio y móvil: retrato editorial generado para este proyecto usando como referencia la fotografía original del modelo Solar Humo. Originales en `brand/hero-campaign-desktop.png` y `brand/hero-campaign-mobile.png`; el build crea archivos WebP optimizados. La anterior imagen editorial permanece archivada en `brand/hero-editorial-original.png`.
 - Fotos de producto: archivos suministrados en las carpetas `AXIA H...` y `AXIA MUJER...`, sin alterar las monturas.
 
 ## Pendientes comerciales

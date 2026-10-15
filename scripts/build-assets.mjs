@@ -61,8 +61,14 @@ await sharp(path.join(root, 'brand', 'logo-axia-original.png'))
   .extract({ left: 1220, top: 390, width: 1450, height: 660 })
   .png()
   .toFile(path.join(output, 'logo-axia.png'));
-await sharp(path.join(root, 'brand', 'hero-editorial-original.png'))
-  .resize({ width: 1920, withoutEnlargement: true })
-  .webp({ quality: 82 })
-  .toFile(path.join(output, 'hero-editorial.webp'));
+await Promise.all([
+  sharp(path.join(root, 'brand', 'hero-campaign-desktop.png'))
+    .resize({ width: 1920, withoutEnlargement: true })
+    .webp({ quality: 84 })
+    .toFile(path.join(output, 'hero-campaign-desktop.webp')),
+  sharp(path.join(root, 'brand', 'hero-campaign-mobile.png'))
+    .resize({ width: 900, withoutEnlargement: true })
+    .webp({ quality: 82 })
+    .toFile(path.join(output, 'hero-campaign-mobile.webp')),
+]);
 console.log(`Prepared ${jobs.length} source images and ${jobs.length * 4} responsive catalog files.`);

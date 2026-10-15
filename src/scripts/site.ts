@@ -12,11 +12,23 @@ const refresh = () => {
   });
   document.dispatchEvent(new CustomEvent('axia:selection-changed', { detail: selection }));
 };
-document.querySelector<HTMLButtonElement>('[data-menu-toggle]')?.addEventListener('click', (event) => {
-  const button = event.currentTarget as HTMLButtonElement;
-  const open = button.getAttribute('aria-expanded') !== 'true';
-  button.setAttribute('aria-expanded', String(open));
-  document.querySelector('.main-nav')?.classList.toggle('open', open);
+const menuButton = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+const mainNav = document.querySelector<HTMLElement>('#main-nav');
+const closeMenu = () => {
+  menuButton?.setAttribute('aria-expanded', 'false');
+  menuButton?.setAttribute('aria-label', 'Abrir menú');
+  mainNav?.classList.remove('open');
+};
+menuButton?.addEventListener('click', () => {
+  const open = menuButton.getAttribute('aria-expanded') !== 'true';
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  mainNav?.classList.toggle('open', open);
+});
+mainNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
+document.addEventListener('click', (event) => {
+  if (event.target instanceof Node && !menuButton?.contains(event.target) && !mainNav?.contains(event.target)) closeMenu();
 });
 document.querySelectorAll<HTMLButtonElement>('[data-add-selection]').forEach((button) => button.addEventListener('click', () => {
   const slug = button.dataset.addSelection;
