@@ -31,4 +31,5 @@ document.querySelector<HTMLButtonElement>('[data-share]')?.addEventListener('cli
     else { await navigator.clipboard.writeText(location.href); button.textContent = 'Enlace copiado ✓'; }
   } catch { /* User cancelled the system share sheet. */ }
 });
+document.addEventListener('axia:selection-removed', refresh);
 refresh();
