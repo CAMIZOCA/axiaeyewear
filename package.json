@@ -8,7 +8,8 @@
     "assets": "node scripts/build-assets.mjs",
     "build": "npm run assets && astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "verify": "npm run check && npm run build && node scripts/check-site.mjs"
   },
   "dependencies": {
     "astro": "^7.4.0",
