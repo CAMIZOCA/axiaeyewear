@@ -17,14 +17,16 @@ La web local estará en `http://localhost:4321`. El comando `build` genera `dist
 
 ## Cloudflare Pages
 
-Conecta el repositorio `CAMIZOCA/axiaeyewear` a Pages con la rama de producción `main`:
+El proyecto [`axiaeyewear`](https://axiaeyewear.pages.dev/) está conectado a `CAMIZOCA/axiaeyewear`. Cada push a `main` activa una compilación y despliegue automático. La web pública está en [axiaeyewear.com](https://axiaeyewear.com/); `www` redirige con 301 al dominio principal. Web Analytics está habilitado.
+
+Configuración del build:
 
 - Framework: Astro
 - Build command: `npm run build`
 - Output directory: `dist`
 - Node.js: 22 o superior (`NODE_VERSION=22` si el entorno no lo selecciona)
 
-Asocia `axiaeyewear.com` como dominio personalizado. Configura `www.axiaeyewear.com` y una regla 301 hacia el dominio principal. Activa Web Analytics si deseas medición. Email Routing debe recibir `hello@axiaeyewear.com` y reenviar a `opticaandina.ec@gmail.com`; Cloudflare pedirá verificar el destino.
+Email Routing ya está habilitado para el dominio. El destino `opticaandina.ec@gmail.com` está pendiente de verificación en ese buzón. En cuanto se verifique, crea una regla de `hello@axiaeyewear.com` hacia ese destino y prueba la recepción. Hasta entonces, el correo publicado en la web aún no recibirá mensajes.
 
 ## Catálogo
 
