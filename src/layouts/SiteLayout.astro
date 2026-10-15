@@ -1,0 +1,74 @@
+---
+import '../styles/global.css';
+import { categories, categoryUrl } from '../data/catalog';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  schema?: Record<string, unknown>;
+}
+const { title, description, image = '/assets/hero-editorial.webp', schema } = Astro.props;
+const canonical = new URL(Astro.url.pathname, 'https://axiaeyewear.com').toString();
+const socialImage = new URL(image, 'https://axiaeyewear.com').toString();
+const nav = [
+  { href: categoryUrl('gafas-de-sol'), label: categories['gafas-de-sol'].label },
+  { href: categoryUrl('screen-glasses'), label: categories['screen-glasses'].label },
+  { href: categoryUrl('clips'), label: categories.clips.label },
+  { href: '/axia/', label: 'La marca' },
+];
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'AXIA Eyewear',
+  url: 'https://axiaeyewear.com',
+  logo: 'https://axiaeyewear.com/assets/logo-axia.png',
+  email: 'hello@axiaeyewear.com',
+  sameAs: ['https://www.instagram.com/axiaeyewear_ec/'],
+  parentOrganization: { '@type': 'Organization', name: 'Óptica Andina', url: 'https://www.opticaandina.com.ec/' },
+};
+---
+<!doctype html>
+<html lang="es-EC">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <title>{title} | AXIA Eyewear</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AXIA Eyewear" />
+    <meta property="og:title" content={`${title} | AXIA Eyewear`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json" set:html={JSON.stringify(organization)} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement">UNA FORMA DE MIRAR. UNA FORMA DE SER.</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav" data-menu-toggle><span></span><span></span></button>
+        <a class="wordmark" href="/" aria-label="AXIA Eyewear, inicio"><img src="/assets/logo-axia.png" alt="AXIA Eyewear" width="134" height="50" /></a>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          {nav.map((item) => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
+        </nav>
+        <a class="selection-link" href="/seleccion/" aria-label="Ver mi selección"><span class="selection-label">Mi selección</span><span class="selection-count" data-selection-count>0</span></a>
+      </div>
+    </header>
+    <main id="contenido"><slot /></main>
+    <footer class="site-footer">
+      <div class="footer-top"><div><p class="eyebrow mint">AXIA / ἀξία</p><p class="footer-statement">Lo que tiene valor<br /><em>propio permanece.</em></p></div><div class="footer-links"><div><p>Explora</p><a href="/colecciones/gafas-de-sol/">Gafas de sol</a><a href="/colecciones/screen-glasses/">Screen Glasses</a><a href="/colecciones/clips/">Clips</a><a href="/axia/">Nuestra historia</a></div><div><p>Información</p><a href="/contacto/">Contacto</a><a href="/preguntas-frecuentes/">Preguntas frecuentes</a><a href="/privacidad/">Privacidad</a><a href="/terminos/">Términos y condiciones</a></div><div><p>Conecta</p><a href="https://www.instagram.com/axiaeyewear_ec/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:hello@axiaeyewear.com">hello@axiaeyewear.com</a><a href="https://wa.me/593999028654" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></div>
+      <div class="footer-bottom"><span>© {new Date().getFullYear()} AXIA Eyewear. Una marca vinculada a Óptica Andina.</span><span>Quito, Ecuador · Mirar con intención</span></div>
+    </footer>
+    <script src="../scripts/site.ts"></script>
+  </body>
+</html>

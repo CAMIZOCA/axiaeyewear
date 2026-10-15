@@ -1,0 +1,21 @@
+{
+  "name": "axia-eyewear",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run assets && astro dev",
+    "assets": "node scripts/build-assets.mjs",
+    "build": "npm run assets && astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^7.4.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "typescript": "^5.9.0"
+  }
+}

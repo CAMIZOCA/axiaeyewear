@@ -1,0 +1,12 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+const faqs=[
+  ['¿Puedo comprar directamente en esta web?','Por ahora AXIA funciona como catálogo. Puedes agregar modelos a tu selección y consultar precio, disponibilidad y forma de compra con Óptica Andina por WhatsApp.'],
+  ['¿Los precios que aparecen son finales?','Todavía no publicamos precios. Óptica Andina confirma la cotización vigente y los detalles de cada modelo antes de cualquier compra.'],
+  ['¿Qué incluyen los Screen Glasses?','Aquí se muestran armazones. Las lunas, tratamientos y filtros se eligen y cotizan aparte según tus necesidades. Consulta sus opciones con Óptica Andina.'],
+  ['¿Qué incluyen los modelos con clip?','Las fotografías muestran una montura y su clip. Confirma directamente la configuración comercial de cada modelo antes de comprar.'],
+  ['¿Cómo sé si un modelo está disponible?','La disponibilidad se confirma al momento de la consulta. Si un modelo se marca como agotado, seguirá visible en el catálogo.'],
+  ['¿Dónde puedo recibir atención?','Puedes escribir por WhatsApp, llamar a Óptica Andina o visitar Ventura Mall en Tumbaco, Quito. Consulta horarios antes de acercarte.'],
+];
+---
+<SiteLayout title="Preguntas frecuentes" description="Respuestas sobre modelos AXIA, disponibilidad, precios, Screen Glasses y consultas con Óptica Andina."><div class="container"><div class="breadcrumbs"><a href="/">Inicio</a> / Preguntas frecuentes</div><header class="page-head"><p class="eyebrow">Información útil</p><h1>Preguntas<br />frecuentes.</h1></header><section class="faq-list section-space">{faqs.map(([question,answer])=><details><summary>{question}</summary><p>{answer}</p></details>)}<p style="margin-top:35px">¿Tienes otra pregunta? <a class="text-link" href="/contacto/">Escríbenos ↗</a></p></section></div></SiteLayout>

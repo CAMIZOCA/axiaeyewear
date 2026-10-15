@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "solar-humo",
+    "title": "Solar Humo",
+    "category": "gafas-de-sol",
+    "type": "Gafas de sol",
+    "color": "Café translúcido · lunas humo",
+    "description": "Una silueta amplia de líneas definidas, en café translúcido y lunas de tono humo. Una pieza con presencia para los días de luz.",
+    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 05_46"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-pizarra",
+    "title": "Clip Pizarra",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Azul grisáceo",
+    "description": "Una montura de contorno recto en azul grisáceo, fotografiada junto a su accesorio de clip. Dos expresiones en una misma silueta.",
+    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 02_33"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-cristal",
+    "title": "Clip Cristal",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Cristal",
+    "description": "Transparencia y líneas ligeras en una montura presentada con su clip. El detalle cambia su carácter sin perder claridad.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_49"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-miel",
+    "title": "Clip Miel",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Miel",
+    "description": "Una forma angular en tono miel, fotografiada con su clip. Cálida, gráfica y fácil de reconocer.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 02_02"],
+    "imageCount": 9,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-cristal",
+    "title": "Cristal",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Cristal",
+    "description": "Una montura transparente de contorno redondeado. Su forma deja que el rostro y el estilo personal lleven la voz.",
+    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 01_34"],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-violeta",
+    "title": "Violeta",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Violeta translúcido",
+    "description": "Contorno redondeado y un matiz violeta translúcido para una expresión tranquila con un giro inesperado.",
+    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 01_56"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-negro",
+    "title": "Negro",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Negro · detalle azul",
+    "description": "Una forma rectangular de frente negro y detalles azules. Precisa, directa y contemporánea.",
+    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 02_00"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-rosa",
+    "title": "Rosa",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rosa translúcido",
+    "description": "Una montura amplia de líneas suaves en rosa translúcido. Color sutil y silueta presente.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_24"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-marfil",
+    "title": "Marfil",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Blanco marfil",
+    "description": "Una silueta cat eye clara y expresiva. El marfil dibuja el contorno con ligereza.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_28"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-coral",
+    "title": "Coral",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Coral multicolor",
+    "description": "Una forma cat eye de mezcla coral y tonos suaves. Un acento de color con identidad propia.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_31"],
+    "imageCount": 10,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-verde",
+    "title": "Verde",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Verde",
+    "description": "Una montura de línea fina en verde, con una silueta elevada y un gesto de color decidido.",
+    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_35", "ChatGPT Image Sep 24, 2026, 01_36"],
+    "imageCount": 10,
+    "status": "unknown"
+  }
+]

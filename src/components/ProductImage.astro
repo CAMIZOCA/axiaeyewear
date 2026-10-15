@@ -1,0 +1,12 @@
+---
+import { imageUrl, type Product } from '../data/catalog';
+interface Props { product: Product; index?: number; large?: boolean; eager?: boolean; class?: string; }
+const { product, index = 1, large = false, eager = false, class: className = '' } = Astro.props;
+const width = large ? 1200 : 480;
+const alt = `${product.type} AXIA ${product.title}, ${product.color.toLowerCase()}, vista ${index}`;
+---
+<picture class={className}>
+  <source type="image/avif" srcset={imageUrl(product, index, width, 'avif')} />
+  <source type="image/webp" srcset={imageUrl(product, index, width, 'webp')} />
+  <img src={imageUrl(product, index, width, 'webp')} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" width={width} height={width} />
+</picture>

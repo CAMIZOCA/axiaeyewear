@@ -1,0 +1,12 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { products, categories, type CategorySlug } from '../../data/catalog';
+export function getStaticPaths() { return (Object.keys(categories) as CategorySlug[]).map((category) => ({ params: { category }, props: { category } })); }
+const { category } = Astro.props as { category: CategorySlug };
+const details = categories[category];
+const collection = products.filter((product) => product.category === category);
+---
+<SiteLayout title={details.label} description={`${details.intro} Explora ${collection.length} modelos AXIA Eyewear y consulta disponibilidad con Óptica Andina.`} image={`/assets/catalog/${collection[0].slug}/01-1200.webp`} schema={{ '@context':'https://schema.org', '@type':'CollectionPage', name:details.label, url:Astro.url.toString() }}>
+  <div class="container"><div class="breadcrumbs"><a href="/">Inicio</a> / Colecciones / {details.label}</div><header class="page-head"><p class="eyebrow">{details.eyebrow}</p><h1>{details.label}</h1><p>{details.intro}</p></header><section class="section-space" aria-label={`Productos de ${details.label}`}>{category === 'screen-glasses' && <p class="collection-note">Estas fotografías muestran armazones. Las lunas, tratamientos y filtros se eligen y cotizan por separado con Óptica Andina.</p>}{category === 'clips' && <p class="collection-note">Consulta la configuración incluida, el precio y la disponibilidad de cada modelo antes de confirmar tu pedido.</p>}<div class="product-grid">{collection.map((product) => <ProductCard product={product} />)}</div></section></div>
+</SiteLayout>
