@@ -1,0 +1,56 @@
+---
+import type { Campaign } from '../data/campaigns';
+interface Props {
+  campaign: Campaign;
+  title: string;
+  intro: string;
+  href: string;
+  action?: string;
+  eyebrow?: string;
+}
+const { campaign, title, intro, href, action = 'Ver modelos', eyebrow = 'AXIA / EYEWEAR' } = Astro.props;
+const base = `/assets/campaigns/${campaign.image}`;
+---
+<section class="campaign-banner" aria-labelledby="campaign-title" data-featured-product={campaign.featuredSlug} style={`--campaign-desktop:${campaign.desktopPosition};--campaign-mobile:${campaign.mobilePosition}`}>
+  <picture class="campaign-photo">
+    <source media="(max-width: 760px)" type="image/avif" srcset={`${base}-mobile.avif`} />
+    <source media="(max-width: 760px)" type="image/webp" srcset={`${base}-mobile.webp`} />
+    <source type="image/avif" srcset={`${base}-desktop.avif`} />
+    <img src={`${base}-desktop.webp`} alt={campaign.alt} width="1536" height="1024" fetchpriority="high" loading="eager" decoding="async" />
+  </picture>
+  <div class="campaign-inner"><div class="campaign-copy">
+    <p class="campaign-eyebrow">{eyebrow}</p>
+    <h1 id="campaign-title">{title}</h1>
+    <p class="campaign-intro">{intro}</p>
+    <a class="campaign-action" href={href}>{action}<span aria-hidden="true">↓</span></a>
+  </div></div>
+</section>
+
+<style>
+  .campaign-banner{position:relative;isolation:isolate;overflow:hidden;background:#514b43;color:#fff;height:clamp(180px,28svh,240px)}
+  .campaign-photo{position:absolute;inset:0;z-index:-2}
+  .campaign-photo img{width:100%;height:100%;object-fit:cover;object-position:var(--campaign-desktop);animation:campaign-image .65s ease-out both}
+  .campaign-banner::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#171714bd,#17171465 40%,transparent 67%)}
+  .campaign-inner{max-width:1450px;margin:auto;padding:0 5%;height:100%;display:flex;align-items:center}
+  .campaign-copy{max-width:55%;animation:campaign-copy .45s ease-out both}
+  .campaign-eyebrow{font-size:9px;letter-spacing:.2em;font-weight:700;margin:0 0 8px;color:#c6ede2}
+  h1{font:400 clamp(36px,4vw,56px)/1.04 'Manrope',sans-serif;letter-spacing:-.055em;margin:0 0 8px}
+  .campaign-intro{font-size:14px;line-height:1.4;margin:0;max-width:360px;color:#f3f1ec}
+  .campaign-action{display:inline-flex;align-items:center;gap:30px;min-height:44px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-top:3px}
+  .campaign-action span{transition:transform .2s}
+  .campaign-action:hover span{transform:translateY(4px)}
+  .campaign-action:focus-visible{outline-color:#c6ede2}
+  @keyframes campaign-image{from{opacity:.75;transform:scale(1.015)}to{opacity:1;transform:scale(1)}}
+  @keyframes campaign-copy{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+  @media(max-width:760px){
+    .campaign-banner{height:clamp(170px,27svh,200px)}
+    .campaign-inner{padding:0 5%}.campaign-copy{max-width:60%}
+    .campaign-photo img{object-position:var(--campaign-mobile)}
+    .campaign-banner::after{background:linear-gradient(90deg,#171714d9,#17171480 44%,transparent 78%)}
+    .campaign-eyebrow{font-size:8px;margin-bottom:6px}
+    h1{font-size:clamp(27px,7.4vw,34px);margin-bottom:7px}
+    .campaign-intro{font-size:12px;max-width:190px}
+    .campaign-action{font-size:9px;gap:22px;margin-top:0}
+  }
+  @media(prefers-reduced-motion:reduce){.campaign-photo img,.campaign-copy{animation:none}.campaign-action span{transition:none}}
+</style>

@@ -1,11 +1,11 @@
 ---
 import { productUrl, type Product } from '../data/catalog';
 import ProductImage from './ProductImage.astro';
-interface Props { product: Product; }
-const { product } = Astro.props;
+interface Props { product: Product; eager?: boolean; }
+const { product, eager = false } = Astro.props;
 ---
 <article class="product-card">
-  <a class="product-card-image" href={productUrl(product)} aria-label={`Ver ${product.title}`}><ProductImage product={product} /><span class="product-badge">{product.status === 'sold_out' ? 'Agotado' : product.category === 'gafas-de-sol' ? 'SOLAR' : product.category === 'clips' ? 'CLIP' : 'SCREEN'}</span></a>
+  <a class="product-card-image" href={productUrl(product)} aria-label={`Ver ${product.title}`}><ProductImage product={product} eager={eager} /><span class="product-badge">{product.status === 'sold_out' ? 'Agotado' : product.category === 'gafas-de-sol' ? 'SOLAR' : product.category === 'clips' ? 'CLIP' : 'SCREEN'}</span></a>
   <div class="product-card-info"><div><p class="product-kicker">{product.type}</p><h3><a href={productUrl(product)}>{product.title}</a></h3><p class="product-color">{product.color}</p></div><a class="product-arrow" href={productUrl(product)} aria-label={`Explorar ${product.title}`}>↗</a></div>
   <p class="product-availability">{product.status === 'sold_out' ? 'Agotado' : product.status === 'available' ? 'Disponible · consultar precio' : 'Consultar disponibilidad y precio'}</p>
 </article>

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import { buildCampaigns } from './build-campaigns.mjs';
 import products from '../src/data/products.json' with { type: 'json' };
 import apparel from '../src/data/apparel.json' with { type: 'json' };
 
@@ -22,7 +23,15 @@ for (const dir of dirs) {
 const used = new Set();
 const jobs = [];
 for (const product of products) {
-  const matched = originals.filter((file) => product.photoPrefixes.some((prefix) => path.basename(file).startsWith(prefix)));
+  if (product.photoIndexes && (product.photoIndexes.length !== product.imageCount || new Set(product.photoIndexes).size !== product.imageCount || product.photoIndexes.some((index) => !Number.isInteger(index) || index < 1))) {
+    throw new Error(`${product.slug}: photoIndexes must select exactly ${product.imageCount} distinct positive image numbers`);
+  }
+  const matched = originals.filter((file) => {
+    if (!product.photoPrefixes.some((prefix) => path.basename(file).startsWith(prefix))) return false;
+    if (!product.photoIndexes) return true;
+    const match = path.basename(file).match(/\((\d+)\)\.png$/i);
+    return match && product.photoIndexes.includes(Number(match[1]));
+  });
   if (matched.length !== product.imageCount) throw new Error(`${product.slug}: expected ${product.imageCount} images, found ${matched.length}`);
   const indexed = new Map();
   for (const file of matched) {
@@ -34,8 +43,9 @@ for (const product of products) {
     used.add(file);
   }
   for (let index = 1; index <= product.imageCount; index++) {
-    const file = indexed.get(index);
-    if (!file) throw new Error(`${product.slug}: missing angle ${index}`);
+    const sourceIndex = product.photoIndexes?.[index - 1] ?? index;
+    const file = indexed.get(sourceIndex);
+    if (!file) throw new Error(`${product.slug}: missing source image ${sourceIndex}`);
     jobs.push({ product, index, file });
   }
 }
@@ -57,6 +67,21 @@ await Promise.all(Array.from({ length: 4 }, async () => {
     }
   }
 }));
+
+// Remove only obsolete generated variants, so a split gallery cannot retain other models.
+const catalogRoot = path.join(output, 'catalog');
+const expectedVariants = new Set(jobs.flatMap(({ product, index }) => [480, 1200].flatMap((width) =>
+  ['webp', 'avif'].map((format) => path.join(catalogRoot, product.slug, `${String(index).padStart(2, '0')}-${width}.${format}`))
+)));
+for (const entry of await fs.readdir(catalogRoot, { withFileTypes: true })) {
+  if (!entry.isDirectory() || entry.isSymbolicLink()) continue;
+  const directory = path.join(catalogRoot, entry.name);
+  for (const file of await fs.readdir(directory, { withFileTypes: true })) {
+    if (!file.isFile() || !/^\d{2}-(480|1200)\.(webp|avif)$/.test(file.name)) continue;
+    const target = path.join(directory, file.name);
+    if (!expectedVariants.has(target)) await fs.unlink(target);
+  }
+}
 
 await sharp(path.join(root, 'brand', 'logo-axia-original.png'))
   .extract({ left: 1220, top: 390, width: 1450, height: 660 })
@@ -84,4 +109,5 @@ await Promise.all(apparel.map(async (product) => {
     ]);
   }
 }));
-console.log(`Prepared ${jobs.length} eyewear source images, ${jobs.length * 4} responsive catalog files, and ${apparel.length} apparel concepts.`);
+await buildCampaigns(root);
+console.log(`Prepared ${jobs.length} eyewear source images, ${jobs.length * 4} responsive catalog files, ${apparel.length} apparel concepts, and 4 responsive campaigns.`);

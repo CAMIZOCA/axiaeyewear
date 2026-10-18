@@ -208,5 +208,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   .hero-media img, .hero-content > *, .main-nav.open { animation: none; }
 }

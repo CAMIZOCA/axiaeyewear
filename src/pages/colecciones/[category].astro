@@ -1,12 +1,62 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { products, categories, type CategorySlug } from '../../data/catalog';
+import CampaignBanner from '../../components/CampaignBanner.astro';
+import { products, categories, categoryUrl, type CategorySlug } from '../../data/catalog';
 export function getStaticPaths() { return (Object.keys(categories) as CategorySlug[]).map((category) => ({ params: { category }, props: { category } })); }
 const { category } = Astro.props as { category: CategorySlug };
 const details = categories[category];
 const collection = products.filter((product) => product.category === category);
+const links = [
+  { slug: 'gafas-de-sol' as const, label: 'Sunglasses' },
+  { slug: 'screen-glasses' as const, label: 'Screen Glasses' },
+  { slug: 'clips' as const, label: 'Clips' },
+];
 ---
-<SiteLayout title={details.label} description={`${details.intro} Explora ${collection.length} modelos AXIA Eyewear y consulta disponibilidad con Óptica Andina.`} image={`/assets/catalog/${collection[0].slug}/01-1200.webp`} schema={{ '@context':'https://schema.org', '@type':'CollectionPage', name:details.label, url:Astro.url.toString() }}>
-  <div class="container"><div class="breadcrumbs"><a href="/">Inicio</a> / Colecciones / {details.label}</div><header class="page-head"><p class="eyebrow">{details.eyebrow}</p><h1>{details.label}</h1><p>{details.intro}</p></header><section class="section-space" aria-label={`Productos de ${details.label}`}>{category === 'screen-glasses' && <p class="collection-note">Estas fotografías muestran armazones. Las lunas, tratamientos y filtros se eligen y cotizan por separado con Óptica Andina.</p>}{category === 'clips' && <p class="collection-note">Consulta la configuración incluida, el precio y la disponibilidad de cada modelo antes de confirmar tu pedido.</p>}<div class="product-grid">{collection.map((product) => <ProductCard product={product} />)}</div></section></div>
+<SiteLayout title={details.label} description={`${details.intro} Explora ${collection.length} modelos AXIA Eyewear y consulta disponibilidad con Óptica Andina.`} image={`/assets/campaigns/${details.campaign.image}-desktop.webp`} schema={{ '@context':'https://schema.org', '@type':'CollectionPage', name:details.label, url:Astro.url.toString() }}>
+  <CampaignBanner campaign={details.campaign} title={details.label} intro={details.campaignIntro} href="#modelos" />
+  <div class="container collection-content">
+    <nav class="collection-nav" aria-label="Colecciones de gafas">
+      <div class="collection-links">{links.map((link) => <a href={categoryUrl(link.slug)} aria-current={category === link.slug ? 'page' : undefined}>{link.label}</a>)}</div>
+      <span class="collection-count">{collection.length} {collection.length === 1 ? 'modelo' : 'modelos'}</span>
+    </nav>
+    <section id="modelos" class="collection-catalog" aria-label={`Productos de ${details.label}`} tabindex="-1">
+      {details.note && <p class="collection-context">{details.note}</p>}
+      <div class:list={['product-grid', 'collection-grid', { 'collection-grid-single': collection.length === 1, 'collection-grid-three': collection.length === 3 }]}>
+        {collection.map((product, index) => <ProductCard product={product} eager={index < 4} />)}
+      </div>
+    </section>
+    <section class="collection-details" aria-label="Información de la colección">
+      <p class="eyebrow">AXIA / {details.eyebrow}</p>
+      <h2>Una forma de mirar.<br />Una forma de ser.</h2>
+      <p>{details.intro}</p>
+      <a class="text-link" href="/contacto/">Encuentra tu AXIA ↗</a>
+    </section>
+  </div>
 </SiteLayout>
+
+<style>
+  .collection-nav{position:sticky;top:0;z-index:10;background:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line);min-height:58px}
+  .collection-links{display:flex;gap:28px}
+  .collection-links a{display:flex;align-items:center;min-height:58px;border-bottom:2px solid transparent;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+  .collection-links a:hover,.collection-links a[aria-current=page]{color:#216f60;border-bottom-color:#216f60}
+  .collection-count{font-size:11px;color:#625f59;white-space:nowrap}
+  .collection-catalog{padding:20px 0 55px;scroll-margin-top:70px}
+  .collection-context{margin:0 0 14px;font-size:12px;line-height:1.5;color:#625f59}
+  .collection-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .collection-grid-single{grid-template-columns:minmax(0,360px)}
+  .collection-grid :global(.product-card-image){aspect-ratio:1.25/1}
+  .collection-grid :global(.product-card-image:focus-visible img){transform:scale(1.055)}
+  .collection-details{border-top:1px solid var(--line);padding:45px 0 65px}
+  .collection-details h2{font:400 clamp(28px,3vw,42px)/1.1 'Manrope',sans-serif;letter-spacing:-.05em;margin:0 0 18px}
+  .collection-details>p:not(.eyebrow){max-width:560px;color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:26px}
+  @media(max-width:760px){
+    .collection-nav{min-height:48px;gap:8px}.collection-links{gap:clamp(12px,4vw,24px)}
+    .collection-links a{font-size:11px;letter-spacing:0;min-height:48px}.collection-count{font-size:10px}
+    .collection-catalog{padding:14px 0 36px}
+    .collection-context{font-size:11px;line-height:1.4;margin-bottom:10px;max-width:300px}
+    .collection-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}.collection-grid-single{grid-template-columns:minmax(0,320px)}
+    .collection-grid :global(.product-card-image){aspect-ratio:1.1/1}.collection-details{padding:30px 0 45px}
+  }
+  @media(prefers-reduced-motion:reduce){.collection-grid :global(.product-card-image img){transition:none;transform:none}}
+</style>

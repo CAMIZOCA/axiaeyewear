@@ -6,8 +6,157 @@
     "type": "Gafas de sol",
     "color": "Café translúcido · lunas humo",
     "description": "Una silueta amplia de líneas definidas, en café translúcido y lunas de tono humo. Una pieza con presencia para los días de luz.",
-    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 05_46"],
-    "imageCount": 10,
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      1
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-champan",
+    "title": "Solar Champán",
+    "category": "gafas-de-sol",
+    "type": "Montura con clip solar",
+    "color": "Champán translúcido · clip humo",
+    "description": "Una montura rectangular en champán translúcido, con detalles metálicos en las patillas. La fotografía muestra el armazón junto a su clip de lunas oscuras; consulta la configuración incluida.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      2
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-avellana",
+    "title": "Solar Avellana",
+    "category": "gafas-de-sol",
+    "type": "Gafas de sol",
+    "color": "Café avellana · lunas humo",
+    "description": "Una silueta redondeada de frente café avellana y lunas de tono humo. Los pequeños detalles claros de las esquinas acentúan su contorno amplio.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      3
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-ambar",
+    "title": "Solar Ámbar",
+    "category": "gafas-de-sol",
+    "type": "Montura con clip solar",
+    "color": "Ámbar translúcido · clip humo",
+    "description": "Una montura de contorno redondeado en ámbar translúcido, con detalles claros en las esquinas. Se presenta junto a un clip solar oscuro; consulta la configuración incluida.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      4
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-oliva",
+    "title": "Solar Oliva",
+    "category": "gafas-de-sol",
+    "type": "Gafas de sol",
+    "color": "Verde oliva oscuro · lunas marrón humo",
+    "description": "Una montura verde oliva oscuro de líneas suaves, puente definido y doble detalle metálico en el frente. Las lunas de tono marrón humo completan una expresión sobria.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      5
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-bosque",
+    "title": "Solar Bosque",
+    "category": "gafas-de-sol",
+    "type": "Montura con clip solar",
+    "color": "Verde translúcido · patillas multicolor · clip humo",
+    "description": "Un frente verde translúcido con detalles metálicos dobles y patillas que combinan verde y tonos rojizos. La imagen presenta su clip solar por separado; consulta la configuración incluida.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      6
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-grafito",
+    "title": "Solar Grafito",
+    "category": "gafas-de-sol",
+    "type": "Gafas de sol",
+    "color": "Grafito violáceo · lunas gris cálido",
+    "description": "Una silueta amplia de contorno redondeado en grafito con un matiz violáceo. El puente recortado y los detalles metálicos rectangulares contrastan con sus lunas de gris cálido.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      7
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-pizarra",
+    "title": "Solar Pizarra",
+    "category": "gafas-de-sol",
+    "type": "Montura con clip solar",
+    "color": "Azul pizarra · clip humo",
+    "description": "Una montura azul pizarra de líneas suaves, puente marcado y detalles metálicos ovalados. La fotografía muestra el armazón y un clip solar de borde oscuro; consulta la configuración incluida.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      8
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-canela",
+    "title": "Solar Canela",
+    "category": "gafas-de-sol",
+    "type": "Gafas de sol",
+    "color": "Café canela translúcido · lunas ámbar",
+    "description": "Una montura redondeada en café canela translúcido, con puente recortado y detalles metálicos dobles. Sus lunas ámbar aportan un acento cálido y reconocible.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      9
+    ],
+    "imageCount": 1,
+    "status": "unknown"
+  },
+  {
+    "slug": "solar-cobre",
+    "title": "Solar Cobre",
+    "category": "gafas-de-sol",
+    "type": "Montura con clip solar",
+    "color": "Café cobrizo translúcido · clip marrón",
+    "description": "Una montura redondeada de tono café cobrizo translúcido y detalles metálicos dobles. Se presenta junto a un clip de lunas marrones con borde a tono; consulta la configuración incluida.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 05_46"
+    ],
+    "photoIndexes": [
+      10
+    ],
+    "imageCount": 1,
     "status": "unknown"
   },
   {
@@ -15,10 +164,84 @@
     "title": "Clip Pizarra",
     "category": "clips",
     "type": "Montura con clip",
-    "color": "Azul grisáceo",
-    "description": "Una montura de contorno recto en azul grisáceo, fotografiada junto a su accesorio de clip. Dos expresiones en una misma silueta.",
-    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 02_33"],
-    "imageCount": 10,
+    "color": "Azul grisáceo · clip humo",
+    "description": "Una montura rectangular en azul grisáceo, con detalles metálicos dobles en las esquinas. Las fotos muestran el frente con el clip solar puesto y una vista casi lateral del armazón con el clip separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_33"
+    ],
+    "photoIndexes": [
+      10,
+      1
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-ebano",
+    "title": "Clip Ébano",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Negro · clip humo",
+    "description": "Una montura negra de contorno redondeado y puente recortado, con pequeños detalles claros en el frente. Se presenta con el clip solar colocado y, en la segunda vista, con el accesorio separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_33"
+    ],
+    "photoIndexes": [
+      2,
+      3
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-bosque",
+    "title": "Clip Bosque",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Verde bosque oscuro · clip humo",
+    "description": "Una silueta rectangular de esquinas suaves en verde bosque oscuro, con doble detalle metálico frontal. La segunda fotografía permite apreciar las patillas a tono y el clip solar separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_33"
+    ],
+    "photoIndexes": [
+      4,
+      5
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-carey",
+    "title": "Clip Carey",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Carey café y ámbar · clip humo",
+    "description": "Una montura rectangular en carey café y ámbar, con detalles metálicos dobles en las esquinas. La vista casi lateral muestra el patrón de las patillas y el clip solar separado del armazón.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_33"
+    ],
+    "photoIndexes": [
+      6,
+      7
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-rosa",
+    "title": "Clip Rosa",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Rosa translúcido · clip humo",
+    "description": "Una montura rectangular de línea superior marcada en rosa translúcido. Las imágenes permiten comparar el frente con el clip solar colocado y el armazón claro con el accesorio separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_33"
+    ],
+    "photoIndexes": [
+      8,
+      9
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -26,10 +249,84 @@
     "title": "Clip Cristal",
     "category": "clips",
     "type": "Montura con clip",
-    "color": "Cristal",
-    "description": "Transparencia y líneas ligeras en una montura presentada con su clip. El detalle cambia su carácter sin perder claridad.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_49"],
-    "imageCount": 10,
+    "color": "Cristal transparente · detalles dorados y celestes · clip humo",
+    "description": "Una montura transparente de contorno ligeramente elevado, con patillas de detalles dorados y celestes. Se muestra de frente con el clip solar colocado y en vista casi lateral con el clip separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_49"
+    ],
+    "photoIndexes": [
+      10,
+      1
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-rubi",
+    "title": "Clip Rubí",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Rojo · patillas carey · clip humo",
+    "description": "Una silueta cat eye en rojo, con esquinas superiores elevadas y patillas carey. La primera fotografía muestra el clip solar colocado; la segunda permite apreciar el armazón y el accesorio separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_49"
+    ],
+    "photoIndexes": [
+      2,
+      3
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-champan",
+    "title": "Clip Champán",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Champán rosado · detalles dorados · clip ámbar",
+    "description": "Una montura cat eye amplia en champán rosado, con líneas superiores marcadas y detalles dorados en las patillas. Las fotos muestran su clip de tono ámbar colocado y separado del armazón.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_49"
+    ],
+    "photoIndexes": [
+      4,
+      5
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-granate",
+    "title": "Clip Granate",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Carey oscuro · acentos granate · clip humo",
+    "description": "Una montura amplia de contorno cuadrado suavizado, con frente carey oscuro y acentos granate. La segunda vista muestra las patillas de perfil facetado y el clip solar separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_49"
+    ],
+    "photoIndexes": [
+      6,
+      7
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-durazno",
+    "title": "Clip Durazno",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Rosa durazno translúcido · clip humo",
+    "description": "Una silueta cat eye de curvas suaves en rosa durazno translúcido, con detalles metálicos dobles en las esquinas. Se presenta con el clip solar colocado y en vista casi lateral con el accesorio separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_49"
+    ],
+    "photoIndexes": [
+      8,
+      9
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -37,10 +334,83 @@
     "title": "Clip Miel",
     "category": "clips",
     "type": "Montura con clip",
-    "color": "Miel",
-    "description": "Una forma angular en tono miel, fotografiada con su clip. Cálida, gráfica y fácil de reconocer.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 02_02"],
-    "imageCount": 9,
+    "color": "Miel translúcido · clip humo",
+    "description": "Una montura cat eye de contorno suave en miel translúcido, con detalles metálicos dobles en el frente. Las imágenes muestran la vista frontal con el clip solar puesto y el armazón con el clip separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 02_02"
+    ],
+    "photoIndexes": [
+      4,
+      1
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-hielo",
+    "title": "Clip Hielo",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Azul hielo translúcido con vetas claras · clip humo",
+    "description": "Una montura cat eye de curvas suaves en azul hielo translúcido, con vetas claras y detalles dobles en las esquinas. La segunda fotografía muestra su perfil y el clip solar separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 02_02"
+    ],
+    "photoIndexes": [
+      2,
+      3
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-humo",
+    "title": "Clip Humo",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Gris cristal translúcido · terminales lima · clip humo",
+    "description": "Una montura de contorno redondeado y puente recortado en gris cristal translúcido. La vista casi lateral permite apreciar los terminales de tono lima y el clip solar separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 02_02"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-onix",
+    "title": "Clip Ónix",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Negro y gris jaspeado · clip humo",
+    "description": "Una montura amplia de silueta cat eye angular en negro y gris jaspeado. Sus detalles metálicos verticales en las esquinas y las patillas facetadas se aprecian en las dos vistas con el clip colocado y separado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 02_02"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "clip-canela",
+    "title": "Clip Canela",
+    "category": "clips",
+    "type": "Montura con clip",
+    "color": "Café canela · lunas humo",
+    "description": "Una silueta cat eye en café canela, con extremos superiores marcados y detalles metálicos verticales. Solo se dispone de esta fotografía frontal con lunas oscuras; confirma la configuración y el clip incluido con Óptica Andina.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 02_02"
+    ],
+    "photoIndexes": [
+      9
+    ],
+    "imageCount": 1,
     "status": "unknown"
   },
   {
@@ -48,9 +418,15 @@
     "title": "Cristal",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Cristal",
-    "description": "Una montura transparente de contorno redondeado. Su forma deja que el rostro y el estilo personal lleven la voz.",
-    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 01_34"],
+    "color": "Cristal transparente",
+    "description": "Una montura transparente de contorno redondeado y puente definido. La vista casi lateral muestra sus patillas claras y el detalle interior de la bisagra.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_34"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
     "imageCount": 2,
     "status": "unknown"
   },
@@ -59,10 +435,84 @@
     "title": "Violeta",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Violeta translúcido",
-    "description": "Contorno redondeado y un matiz violeta translúcido para una expresión tranquila con un giro inesperado.",
-    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 01_56"],
-    "imageCount": 10,
+    "color": "Violeta oscuro translúcido",
+    "description": "Una silueta redondeada en violeta oscuro translúcido, con esquinas superiores marcadas. La vista casi lateral permite apreciar las patillas a tono y sus detalles claros.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_56"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-indigo-lima",
+    "title": "Índigo Lima",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Índigo · interior de patillas lima",
+    "description": "Un frente rectangular en índigo con líneas rectas y esquinas suaves. El interior de las patillas aporta un contraste en tono lima, visible en la segunda fotografía.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_56"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-rosa-cristal",
+    "title": "Rosa Cristal",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rosa translúcido",
+    "description": "Una montura rectangular de esquinas suaves en rosa translúcido. Frente y patillas comparten un acabado claro que deja ver los detalles de la bisagra.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_56"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-carey-miel",
+    "title": "Carey Miel",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Carey en tonos miel y café",
+    "description": "Una silueta ligeramente redondeada en carey miel y café, con pequeños detalles ovalados en el frente. La vista casi lateral muestra la continuidad del patrón en las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_56"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-azul-laguna",
+    "title": "Azul Laguna",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Azul turquesa translúcido · patillas gris azulado",
+    "description": "Una montura rectangular en azul turquesa translúcido, de puente recto y contorno definido. Sus patillas contrastan en gris azulado y se aprecian en la vista casi lateral.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 01_56"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -70,10 +520,84 @@
     "title": "Negro",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Negro · detalle azul",
-    "description": "Una forma rectangular de frente negro y detalles azules. Precisa, directa y contemporánea.",
-    "photoPrefixes": ["ChatGPT Image Sep 13, 2026, 02_00"],
-    "imageCount": 10,
+    "color": "Negro · interior y patillas azul claro",
+    "description": "Una forma rectangular de frente negro y esquinas suaves. La segunda vista permite apreciar el interior azul claro y el contraste de las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_00"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-grafito",
+    "title": "Grafito",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Gris grafito translúcido",
+    "description": "Una montura rectangular amplia en gris grafito translúcido, con una línea superior casi recta. La vista lateral muestra las patillas oscuras y el detalle de su bisagra.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_00"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-bronce",
+    "title": "Bronce",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Bronce · terminales carey",
+    "description": "Una montura de línea fina en tono bronce, con contorno rectangular suavizado y plaquetas visibles. Las patillas incorporan un detalle abierto y terminales en carey.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_00"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-carey-clasico",
+    "title": "Carey Clásico",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Carey café y ámbar",
+    "description": "Un armazón amplio de contorno redondeado en carey café y ámbar. Tres pequeños detalles claros en cada esquina del frente acompañan el puente recortado.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_00"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-cafe-cristal",
+    "title": "Café Cristal",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Café rosado translúcido",
+    "description": "Una montura amplia y angular en café rosado translúcido, de línea superior marcada. La segunda imagen permite ver sus patillas a tono y la unión de la bisagra.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 13, 2026, 02_00"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -81,10 +605,84 @@
     "title": "Rosa",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Rosa translúcido",
-    "description": "Una montura amplia de líneas suaves en rosa translúcido. Color sutil y silueta presente.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_24"],
-    "imageCount": 10,
+    "color": "Rosa pálido · parte inferior transparente",
+    "description": "Una silueta amplia con la parte superior rosa pálido y el contorno inferior transparente. La vista casi lateral muestra sus patillas claras y el detalle rosado de los terminales.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_24"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-marfil-geometrico",
+    "title": "Marfil Geométrico",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Marfil · contorno y detalles dorados",
+    "description": "Una montura de silueta geométrica en marfil, con esquinas recortadas y un fino contorno dorado. La segunda fotografía muestra las patillas claras y el detalle lateral.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_24"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-ambar-cat-eye",
+    "title": "Ámbar Cat Eye",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Ámbar translúcido",
+    "description": "Una silueta cat eye en ámbar translúcido, con extremos superiores elevados y curvas suaves. La vista casi lateral permite apreciar los matices del frente y de las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_24"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-carey-cat-eye",
+    "title": "Carey Cat Eye",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Carey café oscuro y ámbar",
+    "description": "Una montura cat eye de contorno amplio en carey café y ámbar. Los pequeños detalles claros de las esquinas se repiten junto a la unión de las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_24"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-aqua",
+    "title": "Aqua",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Aqua translúcido",
+    "description": "Una montura cat eye de curvas suaves en aqua translúcido. La vista casi lateral muestra el mismo tono claro en las patillas y sus detalles interiores.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_24"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -92,10 +690,84 @@
     "title": "Marfil",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Blanco marfil",
-    "description": "Una silueta cat eye clara y expresiva. El marfil dibuja el contorno con ligereza.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_28"],
-    "imageCount": 10,
+    "color": "Blanco marfil · patillas violeta",
+    "description": "Una silueta cat eye en blanco marfil, con detalles metálicos dobles en las esquinas. Sus patillas violeta aportan un contraste que se distingue en la vista casi lateral.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_28"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-rosa-octogonal",
+    "title": "Rosa Octogonal",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rosa translúcido",
+    "description": "Una montura de forma octogonal en rosa translúcido, con esquinas recortadas y contorno ligero. Frente y patillas mantienen el mismo tono claro en ambas vistas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_28"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-nacar-carey",
+    "title": "Nácar Carey",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rosa nácar · manchas café y oscuras",
+    "description": "Una silueta de contorno geométrico suave en rosa nácar, con manchas café y oscuras. La segunda imagen permite seguir ese patrón sobre las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_28"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-rubi",
+    "title": "Rubí",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rojo rubí translúcido",
+    "description": "Una montura de contorno redondeado y extremos ligeramente elevados en rojo rubí translúcido. Los pequeños detalles rectangulares claros destacan en las esquinas superiores.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_28"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-champan",
+    "title": "Champán",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Champán translúcido · terminales rosados",
+    "description": "Una montura amplia en champán translúcido, con línea superior ligeramente elevada. La vista casi lateral muestra los detalles de la bisagra y los matices rosados de las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_28"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -103,10 +775,84 @@
     "title": "Coral",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Coral multicolor",
-    "description": "Una forma cat eye de mezcla coral y tonos suaves. Un acento de color con identidad propia.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_31"],
-    "imageCount": 10,
+    "color": "Coral multicolor · rojo, amarillo y lila",
+    "description": "Una silueta cat eye angular con una mezcla de rojo coral, amarillo y lila. La vista casi lateral muestra la continuidad del patrón multicolor en las patillas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_31"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-durazno",
+    "title": "Durazno",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Rosa durazno translúcido",
+    "description": "Una montura amplia de contorno suavemente angular en rosa durazno translúcido. Frente y patillas comparten un tono cálido y dejan ver los detalles interiores de la bisagra.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_31"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-borgona",
+    "title": "Borgoña",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Borgoña · detalles dorados",
+    "description": "Una montura de línea superior borgoña y contorno inferior ligero, con plaquetas visibles. Sus patillas incorporan detalles dorados y terminales a tono con el frente.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_31"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-caramelo",
+    "title": "Caramelo",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Café caramelo · patillas translúcidas con vetas",
+    "description": "Una montura cat eye de curvas suaves en café caramelo. La vista casi lateral revela sus patillas translúcidas con vetas claras y oscuras.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_31"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-peltre",
+    "title": "Peltre",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Gris peltre · detalles claros",
+    "description": "Una montura cat eye de línea fina en gris peltre, con plaquetas visibles y pequeños detalles claros junto a las bisagras. La segunda fotografía muestra las patillas oscuras y su perfil ligero.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_31"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   },
   {
@@ -114,10 +860,89 @@
     "title": "Verde",
     "category": "screen-glasses",
     "type": "Armazón óptico",
-    "color": "Verde",
-    "description": "Una montura de línea fina en verde, con una silueta elevada y un gesto de color decidido.",
-    "photoPrefixes": ["ChatGPT Image Sep 24, 2026, 01_35", "ChatGPT Image Sep 24, 2026, 01_36"],
-    "imageCount": 10,
+    "color": "Verde · detalles dorados",
+    "description": "Una montura de contorno ligeramente elevado y línea fina en verde, con plaquetas visibles. Sus patillas estrechas combinan el tono del frente con detalles dorados.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_35",
+      "ChatGPT Image Sep 24, 2026, 01_36"
+    ],
+    "photoIndexes": [
+      1,
+      2
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-cafe-browline",
+    "title": "Café Browline",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Café · puente dorado · patillas carey",
+    "description": "Una silueta browline de frente superior café y parte inferior de contorno ligero. El puente dorado, las plaquetas y las patillas carey se aprecian en ambas vistas.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_35",
+      "ChatGPT Image Sep 24, 2026, 01_36"
+    ],
+    "photoIndexes": [
+      3,
+      4
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-champan-ligero",
+    "title": "Champán Ligero",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Champán dorado · patillas blancas",
+    "description": "Una montura rectangular de línea superior fina en champán dorado y contorno inferior ligero. La vista casi lateral muestra las patillas blancas y el detalle del puente.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_35",
+      "ChatGPT Image Sep 24, 2026, 01_36"
+    ],
+    "photoIndexes": [
+      5,
+      6
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-canela",
+    "title": "Canela",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Café canela · detalles dorados",
+    "description": "Una montura de frente superior café canela y extremos suavemente elevados, con parte inferior de contorno ligero. Sus plaquetas y detalles dorados acompañan las patillas a tono.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_35",
+      "ChatGPT Image Sep 24, 2026, 01_36"
+    ],
+    "photoIndexes": [
+      7,
+      8
+    ],
+    "imageCount": 2,
+    "status": "unknown"
+  },
+  {
+    "slug": "screen-bosque-browline",
+    "title": "Bosque Browline",
+    "category": "screen-glasses",
+    "type": "Armazón óptico",
+    "color": "Verde bosque · puente dorado · patillas carey",
+    "description": "Una silueta browline de contorno redondeado, con frente superior verde bosque y puente dorado. La vista casi lateral muestra sus patillas carey y la línea inferior ligera.",
+    "photoPrefixes": [
+      "ChatGPT Image Sep 24, 2026, 01_35",
+      "ChatGPT Image Sep 24, 2026, 01_36"
+    ],
+    "photoIndexes": [
+      9,
+      10
+    ],
+    "imageCount": 2,
     "status": "unknown"
   }
 ]

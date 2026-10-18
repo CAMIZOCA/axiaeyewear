@@ -3,7 +3,12 @@ import { imageUrl, type Product } from '../data/catalog';
 interface Props { product: Product; index?: number; large?: boolean; eager?: boolean; class?: string; }
 const { product, index = 1, large = false, eager = false, class: className = '' } = Astro.props;
 const width = large ? 1200 : 480;
-const alt = `${product.type} AXIA ${product.title}, ${product.color.toLowerCase()}, vista ${index}`;
+const view = product.category === 'screen-glasses'
+  ? (index === 1 ? 'vista frontal' : 'vista casi lateral')
+  : product.category === 'clips'
+    ? (index === 1 ? 'vista frontal con clip solar' : 'vista casi lateral con clip separado')
+    : `vista ${index}`;
+const alt = `${product.type} AXIA ${product.title}, ${product.color.toLowerCase()}, ${view}`;
 ---
 <picture class={className}>
   <source type="image/avif" srcset={imageUrl(product, index, width, 'avif')} />
