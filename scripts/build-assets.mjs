@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import products from '../src/data/products.json' with { type: 'json' };
+import apparel from '../src/data/apparel.json' with { type: 'json' };
 
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'public', 'assets');
@@ -71,4 +72,16 @@ await Promise.all([
     .webp({ quality: 82 })
     .toFile(path.join(output, 'hero-campaign-mobile.webp')),
 ]);
-console.log(`Prepared ${jobs.length} source images and ${jobs.length * 4} responsive catalog files.`);
+
+await fs.mkdir(path.join(output, 'apparel'), { recursive: true });
+await Promise.all(apparel.map(async (product) => {
+  const source = path.join(root, 'brand', 'apparel-concepts', `${product.image}.png`);
+  const destination = path.join(output, 'apparel', `${product.image}`);
+  for (const width of [640, 1100]) {
+    await Promise.all([
+      sharp(source).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 82 }).toFile(`${destination}-${width}.webp`),
+      sharp(source).rotate().resize({ width, withoutEnlargement: true }).avif({ quality: 48, effort: 3 }).toFile(`${destination}-${width}.avif`),
+    ]);
+  }
+}));
+console.log(`Prepared ${jobs.length} eyewear source images, ${jobs.length * 4} responsive catalog files, and ${apparel.length} apparel concepts.`);

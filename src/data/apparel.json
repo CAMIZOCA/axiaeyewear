@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "axis-tee",
+    "name": "Axis Tee",
+    "category": "t-shirts",
+    "color": "Negro carbón / menta",
+    "image": "axis-tee",
+    "estimatedPrice": 39,
+    "hook": "Una forma de mirar. Una forma de estar.",
+    "description": "Una camiseta de algodón de corte relajado con una ilustración lineal inspirada en los armazones AXIA.",
+    "design": "Gráfico frontal pequeño en tinta menta, inspirado en una silueta de gafas.",
+    "production": "Propuesta: algodón de peso medio o alto y serigrafía de un color. Gramaje, corte, tallas y acabado por validar con una muestra local."
+  },
+  {
+    "slug": "axia-signature-tee",
+    "name": "Signature Tee",
+    "category": "t-shirts",
+    "color": "Blanco óptico / carbón",
+    "image": "axia-signature-tee",
+    "estimatedPrice": 39,
+    "hook": "El valor propio se lleva a diario.",
+    "description": "Una camiseta blanca de líneas limpias con el nombre AXIA como firma discreta.",
+    "design": "Marca tipográfica pequeña al frente y detalle tonal en la espalda.",
+    "production": "Propuesta: algodón de peso medio y serigrafía o impresión directa. El arte final y la calidad se validan con una muestra local."
+  },
+  {
+    "slug": "frame-hoodie",
+    "name": "Frame Hoodie",
+    "category": "hoodies",
+    "color": "Carbón / menta",
+    "image": "frame-hoodie",
+    "estimatedPrice": 79,
+    "hook": "Una pieza para mirar más allá del marco.",
+    "description": "Hoodie de inspiración urbana con una línea gráfica de gafas que conecta la ropa con el origen óptico de AXIA.",
+    "design": "Bordado lineal en el pecho; el mockup es una referencia de escala y ubicación.",
+    "production": "Propuesta: algodón o mezcla de algodón de peso alto. Validar composición, gramaje, fit, bordado y encogimiento mediante muestra."
+  },
+  {
+    "slug": "quiet-hoodie",
+    "name": "Quiet Hoodie",
+    "category": "hoodies",
+    "color": "Blanco / carbón y menta",
+    "image": "quiet-hoodie",
+    "estimatedPrice": 79,
+    "hook": "Lo esencial también deja huella.",
+    "description": "Una silueta clara con la identidad AXIA reducida a sus elementos esenciales.",
+    "design": "Firma AXIA frontal discreta y acento menta en una manga.",
+    "production": "Propuesta: hoodie de peso alto con impresión o bordado pequeño. Materiales, tallaje y resistencia por confirmar con proveedor."
+  },
+  {
+    "slug": "signature-cap",
+    "name": "Signature Cap",
+    "category": "caps",
+    "color": "Carbón / menta",
+    "image": "signature-cap",
+    "estimatedPrice": 33,
+    "hook": "Tu mirada, hasta el último detalle.",
+    "description": "Gorra de perfil clásico con AXIA bordado en contraste y un gesto de color menta.",
+    "design": "Bordado frontal compacto. Simplificar líneas finas antes de digitalizar el ponchado.",
+    "production": "Propuesta: algodón y bordado frontal. Confirmar estructura, cierre, paneles y tamaño del bordado en una muestra."
+  },
+  {
+    "slug": "two-tone-cap",
+    "name": "Two-Tone Cap",
+    "category": "caps",
+    "color": "Blanco / carbón",
+    "image": "two-tone-cap",
+    "estimatedPrice": 35,
+    "hook": "Dos tonos. Una sola intención.",
+    "description": "Una gorra bicolor que combina una base clara con una visera oscura y la firma AXIA.",
+    "design": "Construcción bicolor con bordado frontal carbón.",
+    "production": "Propuesta: algodón con paneles en contraste y bordado. Colores, forma y disponibilidad sujetos a proveedor."
+  }
+]

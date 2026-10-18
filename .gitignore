@@ -2,6 +2,7 @@ node_modules/
 dist/
 .astro/
 public/assets/catalog/
+public/assets/apparel/
 public/assets/logo-axia.png
 public/assets/hero-editorial.webp
 public/assets/hero-campaign-desktop.webp
